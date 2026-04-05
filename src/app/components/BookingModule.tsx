@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Calendar, Check } from 'lucide-react';
-import { ZekieButton } from '@/app/components/ZekieButton';
+import { DetailButton } from '@/app/components/DetailButton';
 import { Calendar as CalendarComponent } from '@/app/components/ui/calendar';
 import { Input } from '@/app/components/ui/input';
 import { Label } from '@/app/components/ui/label';
@@ -153,14 +153,14 @@ export function BookingModule({ onComplete }: BookingModuleProps) {
             </div>
           </div>
 
-          <ZekieButton
+          <DetailButton
             type="button"
             onClick={handleNext}
             disabled={!formData.service || !selectedDate || !formData.timeSlot}
             className="w-full"
           >
             Continue
-          </ZekieButton>
+          </DetailButton>
         </div>
       )}
 
@@ -214,17 +214,17 @@ export function BookingModule({ onComplete }: BookingModuleProps) {
           </div>
 
           <div className="flex gap-3">
-            <ZekieButton type="button" variant="secondary" onClick={handleBack} className="flex-1">
+            <DetailButton type="button" variant="secondary" onClick={handleBack} className="flex-1">
               Back
-            </ZekieButton>
-            <ZekieButton
+            </DetailButton>
+            <DetailButton
               type="button"
               onClick={handleNext}
               disabled={!formData.name || !formData.phone || !formData.address}
               className="flex-1"
             >
               Continue
-            </ZekieButton>
+            </DetailButton>
           </div>
         </div>
       )}
@@ -263,12 +263,12 @@ export function BookingModule({ onComplete }: BookingModuleProps) {
           </div>
 
           <div className="flex gap-3">
-            <ZekieButton type="button" variant="secondary" onClick={handleBack} className="flex-1">
+            <DetailButton type="button" variant="secondary" onClick={handleBack} className="flex-1">
               Back
-            </ZekieButton>
-            <ZekieButton type="submit" disabled={!formData.vehicleInfo} className="flex-1">
+            </DetailButton>
+            <DetailButton type="submit" disabled={!formData.vehicleInfo} className="flex-1">
               Confirm Booking
-            </ZekieButton>
+            </DetailButton>
           </div>
         </div>
       )}

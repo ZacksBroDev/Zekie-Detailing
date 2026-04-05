@@ -11,7 +11,7 @@ import {
   Sparkles,
   Car,
 } from "lucide-react";
-import { ZekieButton } from "@/app/components/ZekieButton";
+import { DetailButton } from "@/app/components/DetailButton";
 import { MobileActionBar } from "@/app/components/MobileActionBar";
 import { ServiceCard } from "@/app/components/ServiceCard";
 import { ReviewCard } from "@/app/components/ReviewCard";
@@ -75,7 +75,7 @@ export default function App() {
             <div className="flex items-center">
               <img
                 src={logoImage}
-                alt="Zekie Mobile Detailing"
+                alt="Mobile Auto Detailing"
                 className="h-12 lg:h-16 w-auto"
               />
             </div>
@@ -110,20 +110,20 @@ export default function App() {
 
             {/* Desktop CTAs */}
             <div className="hidden lg:flex items-center gap-4">
-              <ZekieButton
+              <DetailButton
                 variant="secondary"
                 size="sm"
                 onClick={() => setQuoteDialogOpen(true)}
               >
                 Get Quote
-              </ZekieButton>
-              <ZekieButton
+              </DetailButton>
+              <DetailButton
                 variant="primary"
                 size="sm"
                 onClick={() => setBookingDialogOpen(true)}
               >
                 Book Now
-              </ZekieButton>
+              </DetailButton>
             </div>
 
             {/* Mobile Menu Button */}
@@ -217,16 +217,16 @@ export default function App() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-            <ZekieButton size="lg" onClick={() => setBookingDialogOpen(true)}>
+            <DetailButton size="lg" onClick={() => setBookingDialogOpen(true)}>
               Book Now
-            </ZekieButton>
-            <ZekieButton
+            </DetailButton>
+            <DetailButton
               variant="secondary"
               size="lg"
               onClick={() => setQuoteDialogOpen(true)}
             >
               Get a Quote
-            </ZekieButton>
+            </DetailButton>
             <button
               onClick={handleCall}
               className="flex items-center gap-2 text-white/70 hover:text-white transition-colors font-heading uppercase text-sm tracking-wider"
@@ -410,9 +410,9 @@ export default function App() {
                 rows={4}
               />
             </div>
-            <ZekieButton className="w-full" type="submit">
+            <DetailButton className="w-full" type="submit">
               Submit Quote Request
-            </ZekieButton>
+            </DetailButton>
           </form>
         </DialogContent>
       </Dialog>
@@ -425,7 +425,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-heading text-4xl lg:text-6xl mb-4 text-white uppercase tracking-wider">
-              Zekie Squeaky Clean Results
+              Squeaky Clean Results
             </h2>
             <p className="text-xl text-white/70 max-w-2xl mx-auto">
               See the transformation. Real results from our mobile detailing
@@ -486,9 +486,9 @@ export default function App() {
           </div>
 
           <div className="text-center">
-            <ZekieButton size="lg" onClick={() => setBookingDialogOpen(true)}>
+            <DetailButton size="lg" onClick={() => setBookingDialogOpen(true)}>
               Book Your Detail
-            </ZekieButton>
+            </DetailButton>
           </div>
         </div>
       </section>
@@ -587,7 +587,7 @@ export default function App() {
             <ReviewCard
               name="Michael R."
               rating={5}
-              review="Best ceramic coating I've ever had. The hydrophobic effect is incredible and Zekie's attention to detail is unmatched. Worth every penny."
+              review="Best ceramic coating I've ever had. The hydrophobic effect is incredible and the attention to detail is unmatched. Worth every penny."
               date="2 weeks ago"
             />
             <ReviewCard
@@ -599,7 +599,7 @@ export default function App() {
             <ReviewCard
               name="David L."
               rating={5}
-              review="Interior was disgusting after my kids' sports season. Zekie made it look and smell brand new. Can't believe the transformation!"
+              review="Interior was disgusting after my kids' sports season. They made it look and smell brand new. Can't believe the transformation!"
               date="3 weeks ago"
             />
             <ReviewCard

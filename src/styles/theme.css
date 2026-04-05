@@ -40,13 +40,13 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
   
-  /* Zekie Brand Colors */
-  --zekie-black: #0a0a0b;
-  --zekie-charcoal: #1a1a1c;
-  --zekie-gray: #2a2a2e;
-  --zekie-silver: #71717a;
-  --zekie-red: #DC2626;
-  --zekie-red-glow: rgba(220, 38, 38, 0.3);
+  /* Brand Colors */
+  --brand-black: #0a0a0b;
+  --brand-charcoal: #1a1a1c;
+  --brand-gray: #2a2a2e;
+  --brand-silver: #71717a;
+  --brand-red: #DC2626;
+  --brand-red-glow: rgba(220, 38, 38, 0.3);
 }
 
 .dark {

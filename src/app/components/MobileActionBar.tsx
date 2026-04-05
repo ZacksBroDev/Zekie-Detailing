@@ -1,6 +1,6 @@
 import React from 'react';
 import { Phone, Calendar, FileText } from 'lucide-react';
-import { ZekieButton } from '@/app/components/ZekieButton';
+import { DetailButton } from '@/app/components/DetailButton';
 
 interface MobileActionBarProps {
   onBookClick: () => void;
