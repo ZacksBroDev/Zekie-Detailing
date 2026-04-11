@@ -41,9 +41,6 @@ import {
   SelectValue,
 } from "@/app/components/ui/select";
 
-// Logo placeholder - replace with actual logo image
-const logoImage = "";
-
 export default function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [bookingDialogOpen, setBookingDialogOpen] = useState(false);
@@ -72,12 +69,16 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">
             {/* Logo */}
-            <div className="flex items-center">
-              <img
-                src={logoImage}
-                alt="Mobile Auto Detailing"
-                className="h-12 lg:h-16 w-auto"
-              />
+            <div className="flex items-center gap-2">
+              <Droplets className="w-7 h-7 lg:w-8 lg:h-8 text-[#DC2626]" />
+              <div className="flex flex-col leading-none">
+                <span className="font-heading text-lg lg:text-xl tracking-widest uppercase text-white">
+                  Mobile Auto
+                </span>
+                <span className="font-heading text-[10px] lg:text-xs tracking-[0.3em] uppercase text-[#DC2626]">
+                  Detailing
+                </span>
+              </div>
             </div>
 
             {/* Desktop Nav */}
@@ -182,13 +183,15 @@ export default function App() {
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 lg:pt-20">
-        {/* Background texture */}
+        {/* Background image */}
         <div
-          className="absolute inset-0 opacity-20"
+          className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+            backgroundImage: `url("/images/hero-detailing.png")`,
           }}
         />
+        {/* Dark overlay for text readability */}
+        <div className="absolute inset-0 bg-black/60" />
 
         {/* Red glow effects */}
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#DC2626] rounded-full blur-[120px] opacity-20" />
